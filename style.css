@@ -8,6 +8,10 @@
 body{
     background-color: #181419;
     color: white;
+    /*reglas para lograr que el footer quede abajo*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* header   */
@@ -75,8 +79,47 @@ body{
             }
         }
     }
+}
 
+.footer {
+  background-color: #9f3647;
+  color: #ffffff;
+  height: 15vh;
+  margin-top: auto;
+
+  .navegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 1.5rem;
+
+    .listaNav {
+      list-style: none;
+      display: flex;
+      align-items: center;
+
+      .listaItem {
+        margin-right: 20px;
+
+        .linkNav {
+          color: #ffffff;
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 1.1rem;
+          padding: 0.5rem 1rem;
+        }
+
+        .linkNav.administradorPeliculas {
+          background-color: #181419;
+          color: white;
+          border-radius: 5px;
+        }
+      }
     }
+  }
+}
 @media (max-width: 768px){
 
     .header{
@@ -108,4 +151,27 @@ body{
             }
         }
     }
+    .footer {
+    overflow: auto;
+    height: auto;
+
+    .navegacion {
+      flex-direction: column;
+      row-gap: 20px;
+
+      .listaNav {
+        flex-direction: column;
+        row-gap: 20px;
+
+        .listaItem {
+          .linkNav {
+            font-weight: 400;
+            margin-right: initial;
+            font-size: 1rem;
+            padding: 0.2rem;
+          }
+        }
+      }
+    }
+  }
 }
