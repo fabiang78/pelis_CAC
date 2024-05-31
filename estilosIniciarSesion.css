@@ -1,0 +1,123 @@
+.bodyIniciarSesion {
+  height: 100%;
+  background-image: url(/images/bg-register.jpg);
+  background-size: cover;
+
+  .headerIniciarSesion {
+    color: #ffffff;
+    height: 10vh;
+    padding: 30px;
+    z-index: 10;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+      2px 2px 0 #000;
+    .anclaLogo {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+  }
+}
+.main {
+  .seccionIniciarSesion {
+    background-color: #342b2c;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    font-size: 1.2rem;
+    .tituloIniciarSesion {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    form {
+      width: 100%;
+      padding: 40px;
+      input:not(.boton),
+      select {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 10px;
+        padding: 0px 20px;
+        font-size: 1.2rem;
+        border-radius: 20px;
+        border: 2px solid #9f3647;
+        background-color: #333333;
+        color: #ffffff;
+        outline: none;
+      }
+      .error input:not(.boton),.error select{
+        border: 2px solid red;
+      }
+      .mensaje-error {
+        color: #ff0000;
+        font-size: 0.8rem;
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }
+      .boton {
+        width: 90%;
+        box-sizing: content-box;
+        background-color: #9f3647;
+        border: 2px solid #9f3647;
+        color: #ffffff;
+        padding: 1rem;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+      .opcion-registrarse {
+        font-size: 1rem;
+        text-decoration: none;
+        color: #4f4e4e;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .bodyIniciarSesion{
+        .headerIniciarSesion{
+            padding:20px;
+            .anclaLogo{
+                font-size: 1rem;
+            }
+        }
+        .main{
+          .seccionIniciarSesion{
+            width: 90%;
+            .tituloIniciarSesion{
+              font-size: 1.25;
+              text-align: center;
+            }
+            form{
+                width: 100%;
+                text-align: center;
+               
+                input:not(.check,.boton),select{
+                    width: 80%;
+                    height: 35px;
+                    font-size: 1rem;
+                }
+                .boton{
+                  margin-top: 20px;
+                  margin-bottom: 20px;
+                  width: 75%;
+                  font-size: 1rem;
+                  padding: 0.7rem;
+                }
+                .opcion-registrarse{
+                  font-size: 0.85rem;
+                }
+          }
+
+}}}}
